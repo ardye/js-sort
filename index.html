@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sorting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      width: 100%;
+      margin: 5vh 5vw;
+    }
+    h1 {
+      font-size: 10vh;
+
+      text-decoration: underline;
+    }
+    
+    input {
+      height: 5vh;
+      border-radius: 5%;
+      font-size: 100%;
+      width: 34vw;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      width: 34vw;
+      height: 5vh;
+      justify-content: space-around;
+    }
+.note {
+  font-size: 1vw;
+  color: red;
+  margin-top: 1vh;
+}
+    button {
+      border-radius: 5%;
+      width: 33%;
+      font-size: 2vh;
+    }
+
+    #result {
+      font-size: 5vw;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Sorting</h1>
+  <form>
+    <input type="text" id="number" name="number" />
+    <p class="note">* Using space for fill next element</p>
+  </form>
+  <div class="btn-group">
+    <button class="buble-sort" onclick="print(bubleSort)">Bubble</button>
+    <button class="quick-sort" onclick="print(quickSort)">Quick</button>
+    <button class="merge-sort" onclick="print(mergeSort)">Merge</button>
+  </div>
+  <div id="result">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
